@@ -57,6 +57,7 @@ void ihaha()
     {
         if (ihahaFlag)
         {
+            //xTaskGetTickCount() to milliseconds. It's used to display the current time in milliseconds.
             printf("At %ldms: ihaha: %d times left\n", pdTICKS_TO_MS(xTaskGetTickCount()), --ihahaCounter);
             ihahaFlag = false;
 
